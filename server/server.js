@@ -7,4 +7,5 @@ app.get("/keep-alive", (req, res) => {
 });
 
 app.listen(6969, () => {
-    console.log("Keep Alive Server Running");
+    console.log("Keep Alive Server Running")
+});
