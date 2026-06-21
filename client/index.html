@@ -9,10 +9,47 @@
 
 <body>
 
-    <button id="hugBtn">חוג</button>
+    <button id="playersTabBtn">שחקנים</button>
     <button id="pacifierBtn">מוצץ</button>
 
-    <h1 id="content">חוג</h1>
+    <div id="playersTab">
+
+        <h1>שחקנים</h1>
+
+        <button id="createPlayerBtn">
+            צור שחקן
+        </button>
+        <div id="createPlayerModal" style="display:none">
+
+            <h2>יצירת שחקן</h2>
+
+            <input id="modalPlayerNameInput" type="text" placeholder="שם שחקן" />
+
+            <button id="savePlayerBtn">
+                שמור
+            </button>
+
+            <button id="closeModalBtn">
+                סגור
+            </button>
+
+        </div>
+        <table id="playersTable">
+            <thead>
+                <tr>
+                    <th>שם שחקן</th>
+                </tr>
+            </thead>
+
+            <tbody id="playersList">
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="pacifierTab" style="display:none">
+        <h1>מוצץ</h1>
+    </div>
 
     <script src="script.js"></script>
 

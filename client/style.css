@@ -9,3 +9,18 @@ button {
     margin: 5px;
     cursor: pointer;
 }
+
+#playersTable {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#playersTable th,
+#playersTable td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#playersTable th {
+    background-color: #f0f0f0;
+}
