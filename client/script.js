@@ -2,7 +2,7 @@ console.log("script loaded");
 
 async function loadPlayers() {
     try {
-        const response = await fetch("http://localhost:6969/players");
+        const response = await fetch("http://13.61.176.154:6969/players");
 
         const players = await response.json();
 
@@ -43,7 +43,7 @@ closeModalBtn.addEventListener("click", () => {
 savePlayerBtn.addEventListener("click", async () => {
     const playerNameInput = document.getElementById("modalPlayerNameInput");
 
-    await fetch("http://localhost:6969/players", {
+    await fetch("http://13.61.176.154:6969/players", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
